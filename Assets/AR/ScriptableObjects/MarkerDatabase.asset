@@ -19,3 +19,6 @@ MonoBehaviour:
   - id: Tanaman
     title: Tanaman
     description: Adalah Pokoknya
+  - id: Digester
+    title: Digester
+    description: Adalah Pokoknya
