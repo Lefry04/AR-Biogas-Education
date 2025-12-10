@@ -22,3 +22,36 @@ MonoBehaviour:
   - id: Digester
     title: Digester
     description: Adalah Pokoknya
+  - id: Katup
+    title: Katup
+    description: Adalah Pokoknya
+  - id: Kotoran Sapi
+    title: Kotoran Sapi
+    description: Adalah Pokoknya
+  - id: Limbah Organik
+    title: Limbah Organik
+    description: Adalah Pokoknya
+  - id: LPG
+    title: LPG
+    description: Adalah Pokoknya
+  - id: Penampungan Gas
+    title: Penampungan Gas
+    description: Adalah Pokoknya
+  - id: Penampungan Slurry
+    title: Penampungan Slurry
+    description: Adalah Pokoknya
+  - id: Pengaduk
+    title: Pengaduk
+    description: Adalah Pokoknya
+  - id: Pipa Ekspansi
+    title: Pipa Ekspansi
+    description: Adalah Pokoknya
+  - id: Pipa Gas
+    title: Pipa Gas
+    description: Adalah Pokoknya
+  - id: Pipa Inlet
+    title: Pipa Inlet
+    description: Adalah Pokoknya
+  - id: Pipa Slurry (Outlet)
+    title: Pipa Slurry (Outlet)
+    description: Adalah Pokoknya
