@@ -15,46 +15,77 @@ MonoBehaviour:
   dataList:
   - id: Corong
     title: Corong
-    description: Adalah Pokoknya
+    description: "Corong digunakan untuk memasukkan bahan baku seperti kotoran sapi
+      atau limbah organik ke dalam digester. Bayangkan seperti corong biasa yang
+      dipakai menuang air\u2014ini fungsinya sama, tapi untuk bahan biogas"
   - id: Tanaman
     title: Tanaman
-    description: Adalah Pokoknya
+    description: 'Tanaman mendapatkan manfaat besar dari sistem biogas. Slurry yang
+      keluar bisa digunakan sebagai pupuk cair alami yang membuat tanaman tumbuh
+      subur tanpa bahan kimia. '
   - id: Digester
     title: Digester
-    description: Adalah Pokoknya
+    description: "Digester adalah tangki utama tempat proses pembuatan biogas berlangsung.
+      Di sinilah bakteri bekerja menguraikan kotoran dan limbah hingga menghasilkan
+      gas biogas dan slurry. Anggap saja digester ini sebagai \u201Cperut raksasa\u201D
+      bagi bahan-bahan organik."
   - id: Katup
     title: Katup
-    description: Adalah Pokoknya
+    description: Katup berfungsi sebagai pintu buka-tutup aliran gas. Jika katup
+      dibuka, biogas bisa mengalir ke pipa gas dan menuju kompor atau alat lain.
+      Jika ditutup, gas akan tetap tersimpan di dalam sistem.
   - id: Kotoran Sapi
     title: Kotoran Sapi
-    description: Adalah Pokoknya
+    description: "Ini adalah bahan baku utama pembuatan biogas. Mengapa kotoran sapi?
+      Karena kotoran sapi mengandung bakteri alami yang suka \u201Cmemakan\u201D
+      bahan organik dan menghasilkan gas metana. Jadi, kotoran sapi bukan hanya limbah\u2014tapi
+      sumber energi!"
   - id: Limbah Organik
     title: Limbah Organik
-    description: Adalah Pokoknya
+    description: Limbah organik seperti sisa sayur, kulit buah, atau makanan bisa
+      juga dimasukkan ke digester. Bahan ini mudah terurai dan membantu menghasilkan
+      gas lebih banyak. Jadi membuang sampah organik ke biogas bisa mengurangi sampah
+      rumah tangga!
   - id: LPG
     title: LPG
-    description: Adalah Pokoknya
+    description: 'LPG tidak digunakan dalam digester, tetapi sering dibandingkan
+      dengan biogas. Biogas bisa jadi pengganti LPG, terutama untuk memasak. Bedanya,
+      LPG berasal dari fosil, sedangkan biogas dari limbah yang bisa diperbarui. '
   - id: Penampung Gas
     title: Penampung Gas
-    description: Adalah Pokoknya
+    description: 'Ini adalah tempat untuk menyimpan gas biogas yang sudah jadi. Ketika
+      digester menghasilkan gas, gas tersebut naik dan masuk ke penampung sebelum
+      dialirkan ke kompor. Semakin banyak gas, semakin penuh penampungnya. '
   - id: Penampung Slurry
     title: Penampung Slurry
-    description: Adalah Pokoknya
+    description: 'Tempat menampung slurry sebelum digunakan sebagai pupuk. Biasanya
+      berupa ember atau bak kecil. '
   - id: Pengaduk
     title: Pengaduk
-    description: Adalah Pokoknya
+    description: 'Pengaduk digunakan untuk mengaduk bahan di dalam digester supaya
+      proses fermentasi lebih merata. Seperti mengaduk bubur agar tidak menggumpal,
+      digester juga butuh diaduk agar gas lebih banyak dihasilkan. '
   - id: Pipa Ekspansi
     title: Pipa Ekspansi
-    description: Adalah Pokoknya
+    description: 'Pipa ekspansi membantu mengimbangi tekanan dalam digester. Ketika
+      tekanan gas naik, digester tetap aman karena pipa ini membantu mengeluarkan
+      kelebihan tekanan secara tepat. '
   - id: Pipa Gas
     title: Pipa Gas
-    description: Adalah Pokoknya
+    description: 'Pipa gas berfungsi untuk menyalurkan biogas dari penampung gas
+      menuju kompor atau alat lain. Pipa ini harus kedap supaya gas tidak bocor. '
   - id: Pipa Inlet
     title: Pipa Inlet
-    description: Adalah Pokoknya
+    description: 'Ini adalah pipa khusus untuk memasukkan bahan ke dalam digester
+      (melengkapi fungsi corong). Biasanya terhubung langsung dari corong menuju
+      tangki digester. '
   - id: Pipa Slurry (Outlet)
     title: Pipa Slurry (Outlet)
-    description: Adalah Pokoknya
+    description: 'Pipa slurry adalah pipa tempat keluarnya sisa bahan atau slurry
+      dari digester. Ketika digester penuh, slurry akan terdorong keluar melalui
+      pipa ini ke ember slurry. '
   - id: Ember Slurry
     title: Ember Slurry
-    description: Adalah Pokoknya
+    description: Slurry adalah sisa bahan setelah gas diproduksi. Warnanya mirip
+      bubur cair. Slurry ini sangat bermanfaat karena bisa digunakan sebagai pupuk
+      organik untuk tanaman.
