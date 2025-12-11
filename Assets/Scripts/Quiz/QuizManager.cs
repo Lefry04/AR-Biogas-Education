@@ -28,10 +28,14 @@ public class QuizManager : MonoBehaviour
     public Color wrongColor = Color.red;
     public Color defaultBGColor = Color.white;
     public Color defaultTextColor = Color.black;
-    public Color correctTextColor = Color.white;  
+    public Color correctTextColor = Color.white;
 
     [Header("Final UI")]
     public GameObject finalPanel; // Panel menuju Main Menu
+    public TextMeshProUGUI finalScoreText;
+
+    [Header("Score")]
+    public int score = 0;
 
     private int currentIndex = 0;
     private bool canAnswer = true;
@@ -68,31 +72,56 @@ public class QuizManager : MonoBehaviour
         CheckAnswer(selected);
     }
 
-    void CheckAnswer(string selected)
+    public void CheckAnswer(string selected)
     {
         string correct = quizData.questions[currentIndex].correctAnswer;
 
-        Image selectedImg = GetImage(selected);
-        TextMeshProUGUI selectedText = GetText(selected);
+        // Reset warna (agar selalu bersih untuk kasus tertentu)
+        ResetAllOptionColors();
 
+        // Jika jawaban benar
         if (selected == correct)
         {
-            // Benar
-            selectedImg.color = correctColor;
-            selectedText.color = correctTextColor;
+            // +1 POIN
+            score++;
 
-            canAnswer = false;
+            // Warnai opsi benar
+            Image correctImg = GetImage(correct);
+            TextMeshProUGUI correctTxt = GetText(correct);
+
+            correctImg.color = correctColor;
+            correctTxt.color = correctTextColor;
+
+             score += 10;
+
+            // Jika sudah soal terakhir → buka Final Panel
+            if (currentIndex == quizData.questions.Length - 1)
+            {
+                Invoke(nameof(ShowFinalPanel), 2.0f);
+                return;
+            }
+
+            // Lanjut ke soal berikutnya dalam 3 detik
             Invoke(nameof(NextQuestion), 3f);
         }
         else
         {
-            // Salah → warnai merah lalu reset setelah 1 detik
-            selectedImg.color = wrongColor;
-            selectedText.color = correctTextColor;
+            // Opsi salah → merah 1 detik lalu kembali default
+            Image selectedImg = GetImage(selected);
+            TextMeshProUGUI selectedTxt = GetText(selected);
 
-            canAnswer = false;
-            Invoke(nameof(ResetSelectedColorOnly), 1f);
+            selectedImg.color = wrongColor;
+            selectedTxt.color = correctTextColor;
+
+            // Setelah 1 detik reset kembali
+            Invoke(nameof(ResetAllOptionColors), 1f);
         }
+    }
+
+    void ShowFinalPanel()
+    {
+        finalPanel.SetActive(true);
+        finalScoreText.text = score.ToString();
     }
 
     void ResetSelectedColorOnly()
